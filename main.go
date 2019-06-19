@@ -3,12 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// When initializing a variable in Go, the ":=" symbols are used to assign.
+	cards := []string{"Ace of Diamonds", newCard()}
 
-	// When REassigning only use "="
-	card := newCard()
+	cards = append(cards, "Six of Spades")
+	fmt.Println(cards)
 
-	fmt.Println(card)
 }
 
 func newCard() string {
