@@ -4,10 +4,14 @@ import "fmt"
 
 func main() {
 	// When initializing a variable in Go, the ":=" symbols are used to assign.
-	card := "Ace of Spades"
+	card := newCard()
 
 	// When REassigning only use "="
-	card = "Five of Diamonds"
+	//
 
 	fmt.Println(card)
+}
+
+func newCard() string {
+	return "Three of Clubs"
 }
